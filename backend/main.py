@@ -16,7 +16,7 @@ from supabase_client import insert_row, supabase_configured, table_rows
 app = FastAPI(title="Cedar & Crescent Journeys API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "https://cedar-crescent-journeys.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
